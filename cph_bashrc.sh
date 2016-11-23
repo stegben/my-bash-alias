@@ -11,3 +11,6 @@ function grih() {
   git rebase -i HEAD~$1
 }
 alias grih=grih
+
+alias gp='git push'
+alias gpom='git push origin master'
