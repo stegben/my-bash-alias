@@ -13,9 +13,7 @@ function grih() {
 alias grih=grih
 
 alias gp='git push'
-
 function gpoc() {
-
   git push origin $(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 }
 alias gpoc=gpoc
