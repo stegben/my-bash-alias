@@ -17,4 +17,8 @@ function gpoc() {
   git push origin $(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 }
 alias gpoc=gpoc
+function gpocf() {
+  git push -f origin $(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+}
+alias gpocf=gpocf
 alias gpom='git push origin master'
